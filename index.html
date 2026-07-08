@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashi Sahu | Frontend Developer & CSE Undergraduate Portfolio</title>
+    
+    <!-- SEO Optimization -->
+    <meta name="description" content="Portfolio of Yashi Sahu, a B.Tech Computer Science Engineering undergraduate and passionate Frontend Developer. Exploring React, Java, and Spring Boot for Full Stack Developer roles.">
+    <meta name="keywords" content="Yashi Sahu, Yashi Sahu Portfolio, Frontend Developer, CSE Undergraduate, Prabhat Engineering College, Java Developer, React Developer, Full Stack Developer, Software Engineer Intern">
+    <meta name="author" content="Yashi Sahu">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph (OG) Tags for Social Media Sharing -->
+    <meta property="og:title" content="Yashi Sahu | Frontend Developer & CSE Undergraduate">
+    <meta property="og:description" content="B.Tech CSE student passionate about building clean, responsive, and user-friendly web applications. Check out my projects and learning journey.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/sahuyashi015">
+    <meta property="og:image" content="assets/images/portfolio-preview.jpg">
+     <meta property="og:url" content="https://www.linkedin.com/in/yashi-sahu-62523a37b/">
+    
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- --- Decorative Background Blobs --- -->
+    <div class="bg-blobs" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- --- Page Preloader --- -->
+    <div id="preloader">
+        <div class="loader-circle"></div>
+        <div class="loader-code">const dev = "YS";</div>
+    </div>
+
+    <!-- --- Sticky Floating Navigation Bar --- -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo" id="logo">
+                <span>&lt;</span>YS<span>/&gt;</span>
+            </a>
+            
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#journey" class="nav-link">Journey</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#github-stats" class="nav-link">GitHub</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <!-- Theme Switcher Button -->
+                <button class="theme-switch" id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <!-- Sun Icon (visible in Dark theme) -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <!-- Moon Icon (visible in Light theme) -->
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                
+                <!-- Mobile Navigation Toggle -->
+                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- --- Main Content Area --- -->
+    <main>
+        
+        <!-- ==========================================
+            1. HERO SECTION
+        =========================================== -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <span class="hero-tag">Welcome to my digital space</span>
+                    <h1 class="hero-title">Hi, I'm <span>Yashi Sahu</span></h1>
+                    <div class="hero-subtitle">
+                        I'm a&nbsp;<span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </div>
+                    <p class="hero-desc">
+                        I am a Computer Science Engineering student passionate about building responsive and user-friendly web applications. I enjoy creating clean UI designs and continuously improving my development skills. Currently, I am strengthening my knowledge of React, Java, and Spring Boot to become a Full Stack Developer.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="assets/resume.pdf" class="btn btn-primary" download="Yashi_Sahu_Resume.pdf">
+                            <!-- Download SVG -->
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            Contact Me
+                        </a>
+                        <a href="#projects" class="btn btn-secondary" style="border-color: var(--color-primary);">
+                            View Projects
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <span>Connect with me:</span>
+                        <a href="https://github.com/sahuyashi015" target="_blank" class="social-link" aria-label="GitHub Profile">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yashi-sahu-62523a37b/" target="_blank" class="social-link" aria-label="LinkedIn Profile">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-illustration reveal">
+                    <div class="profile-img-container">
+                        <!-- Custom CSS / SVG Graphic illustration representing CSE/Frontend Engineer -->
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="svg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#3B82F6" />
+                                    <stop offset="100%" stop-color="#D946EF" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="100" cy="80" r="40" fill="url(#svg-grad)" />
+                            <!-- Desk & Laptop visual styling -->
+                            <rect x="50" y="130" width="100" height="60" rx="10" fill="#E2E8F0" opacity="0.1" />
+                            <path d="M30 170 C 30 140, 170 140, 170 170 Z" fill="url(#svg-grad)" opacity="0.85"/>
+                            <rect x="75" y="115" width="50" height="32" rx="4" fill="#1E293B" stroke="#8B5CF6" stroke-width="3" />
+                            <line x1="85" y1="147" x2="115" y2="147" stroke="#8B5CF6" stroke-width="4" stroke-linecap="round" />
+                            <!-- Floating Code tags -->
+                            <text x="25" y="60" fill="#3B82F6" font-family="monospace" font-weight="bold" font-size="20">&lt;/&gt;</text>
+                            <text x="145" y="90" fill="#D946EF" font-family="monospace" font-weight="bold" font-size="18">{ }</text>
+                            <text x="135" y="45" fill="#10B981" font-family="monospace" font-weight="bold" font-size="16">JS</text>
+                            <text x="35" y="110" fill="#F59E0B" font-family="monospace" font-weight="bold" font-size="15">&lt;div&gt;</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            2. ABOUT ME SECTION
+        =========================================== -->
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="section-title reveal">About <span>Me</span></h2>
+                <div class="about-grid">
+                    <div class="about-graphic reveal">
+                        <!-- Custom CSS Grid representing tech badges in about section -->
+                        <div class="tech-stack-badge-grid">
+                            <div class="glass-card tech-badge-card">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <span>Core Java</span>
+                            </div>
+                            <div class="glass-card tech-badge-card">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                <span>Frontend</span>
+                            </div>
+                            <div class="glass-card tech-badge-card">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                                <span>Git VCS</span>
+                            </div>
+                            <div class="glass-card tech-badge-card">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                <span>Spring API</span>
+                            </div>
+                            <div class="glass-card tech-badge-card">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                                <span>Problem Solver</span>
+                            </div>
+                            <div class="glass-card tech-badge-card">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                                <span>React UI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-text reveal">
+                        <p>
+                            I'm currently pursuing a B.Tech in <span class="highlight">Computer Science Engineering</span> (CSE). I have a strong foundation in HTML, CSS, JavaScript, and Git. I enjoy solving problems, learning modern technologies, and building real-world projects.
+                        </p>
+                        <p>
+                            As an aspiring Full Stack Developer, I'm currently expanding my stack by learning <span class="highlight">React, Java, and Spring Boot</span>. I love translating wireframes into functional, accessible layouts and writing robust back-end APIs.
+                        </p>
+                        <p>
+                            I'm looking for <span class="highlight">internships</span> and <span class="highlight">entry-level software developer roles</span> where I can apply my knowledge, collaborate with experienced engineers, and contribute to production-grade repositories.
+                        </p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <div class="stat-num">2027</div>
+                                <div class="stat-label">Graduation Year</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-num">6+</div>
+                                <div class="stat-label">Projects Built</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-num">8.5+</div>
+                                <div class="stat-label">B.Tech CGPA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            3. SKILLS SECTION
+        =========================================== -->
+        <section class="section" id="skills">
+            <div class="container">
+                <h2 class="section-title reveal">Technical <span>Skills</span></h2>
+                <div class="skills-wrapper">
+                    <!-- Frontend Skills Group -->
+                    <div class="glass-card skills-category reveal">
+                        <div class="skills-category-title">
+                            <!-- Desktop/Layout SVG -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Frontend Development
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" data-percent="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">CSS3 / Responsive Web</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" data-percent="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript (ES6+)</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" data-percent="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Responsive Layouts (Flex/Grid)</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" data-percent="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Currently Learning Group -->
+                    <div class="glass-card skills-category reveal">
+                        <div class="skills-category-title">
+                            <!-- Graduation Cap SVG -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Currently Learning
+                        </div>
+                        <div class="skills-list">
+                            <div class="learning-card">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+                                <div class="learning-card-info">
+                                    <h4>React.js</h4>
+                                    <p>Component architecture, state, hooks, APIs</p>
+                                </div>
+                            </div>
+                            <div class="learning-card">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <div class="learning-card-info">
+                                    <h4>Java</h4>
+                                    <p>OOPs Principles, Collections, Data Structures</p>
+                                </div>
+                            </div>
+                            <div class="learning-card">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                                <div class="learning-card-info">
+                                    <h4>Spring Boot</h4>
+                                    <p>RESTful Microservices, JDBC, Spring Security</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools Group -->
+                    <div class="glass-card skills-category reveal">
+                        <div class="skills-category-title">
+                            <!-- Tool/Settings SVG -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                            Developer Tools
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git (Version Control)</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" data-percent="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">GitHub / Gitlab</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" data-percent="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">VS Code / IntelliJ IDEA</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" data-percent="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Command Line / Terminal</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" data-percent="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            4. EDUCATION SECTION
+        =========================================== -->
+        <section class="section" id="education">
+            <div class="container">
+                <h2 class="section-title reveal">My <span>Education</span></h2>
+                <div class="education-timeline">
+                    <!-- B.Tech in CSE -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="glass-card timeline-content">
+                            <span class="timeline-period">2023 – 2027</span>
+                            <h3 class="timeline-title">Bachelor of Technology (B.Tech)</h3>
+                            <span class="timeline-institution">Computer Science Engineering | Prabhat Engineering College, Kanpur</span>
+                            <div class="timeline-body">
+                                <p>Studying core computer science curriculum with hands-on practice in software methodologies.</p>
+                                <ul>
+                                    <li>Focus areas: Data Structures & Algorithms, Object Oriented Programming, DBMS.</li>
+                                    <li>Actively practicing responsive designs and Git version control workflows.</li>
+                                </ul>
+                                <span class="timeline-grade">Pursuing - CGPA: 8.5+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Senior Secondary Education -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="glass-card timeline-content">
+                            <span class="timeline-period">2021 – 2023</span>
+                            <h3 class="timeline-title">Senior Secondary Education (Class XII)</h3>
+                            <span class="timeline-institution">Dharma Devi Inter College, Ajhua Kaushambhi</span>
+                            <div class="timeline-body">
+                                <p>Studied Physics, Chemistry, and Mathematics (PCM stream) as major core domains.</p>
+                                <span class="timeline-grade">Score: 88.8%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- High School -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="glass-card timeline-content">
+                            <span class="timeline-period">2020 – 2021</span>
+                            <h3 class="timeline-title">High School (Class X)</h3>
+                            <span class="timeline-institution">Jay Maa Durge Inter College, Ajhua Kaushambhi</span>
+                            <div class="timeline-body">
+                                <p>Completed General Secondary School syllabus focusing heavily on Basic Sciences and Maths.</p>
+                                <span class="timeline-grade">Score: 87.0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            5. PROJECTS SECTION
+        =========================================== -->
+        <section class="section" id="projects">
+            <div class="container">
+                <h2 class="section-title reveal">Selected <span>Projects</span></h2>
+                <div class="projects-grid">
+                    
+                    <!-- Project 1: Personal Portfolio -->
+                    <article class="glass-card project-card reveal">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-placeholder">
+                                <!-- Layout/Code SVG -->
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><circle cx="8" cy="8" r="1"/><circle cx="12" cy="8" r="1"/></svg>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                            <h3 class="project-card-title">Personal Portfolio Website</h3>
+                            <p class="project-desc">A highly professional, fast, and light-weight responsive portfolio page showcasing qualifications, skills, and coding certificates.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/sahuyashi38/portfolio" target="_blank" class="project-link-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    GitHub
+                                </a>
+                                <a href="#" class="project-link-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Ticket Management System -->
+                    <article class="glass-card project-card reveal">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-placeholder">
+                                <!-- Database/Server SVG -->
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-tags">
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">OOPs</span>
+                                <span class="project-tag">CLI</span>
+                            </div>
+                            <h3 class="project-card-title">Ticket Management System</h3>
+                            <p class="project-desc">A secure console-based ticket booking tracker with object serialization, transaction files, and user/admin role splits.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/sahuyashi38/ticket-system" target="_blank" class="project-link-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Weather App -->
+                    <article class="glass-card project-card reveal">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-placeholder">
+                                <!-- Cloud/Sun SVG -->
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 8.58" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-tags">
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">Weather API</span>
+                                <span class="project-tag">CSS Flex</span>
+                            </div>
+                            <h3 class="project-card-title">Weather Forecast App</h3>
+                            <p class="project-desc">A weather searching site fetching real-time humidity, wind speeds, and temperature data from OpenWeatherMap endpoint.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/sahuyashi38/weather-app" target="_blank" class="project-link-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    GitHub
+                                </a>
+                                <a href="#" class="project-link-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: To-Do App -->
+                    <article class="glass-card project-card reveal">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-placeholder">
+                                <!-- Checkbox/Check SVG -->
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS Grid</span>
+                                <span class="project-tag">Local Storage</span>
+                            </div>
+                            <h3 class="project-card-title">Interactive To-Do List</h3>
+                            <p class="project-desc">A clean, functional checklist helper capturing daily tasks with completion toggles and persistent memory storage in browser.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/sahuyashi38/todo-app" target="_blank" class="project-link-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    GitHub
+                                </a>
+                                <a href="#" class="project-link-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Calculator -->
+                    <article class="glass-card project-card reveal">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-placeholder">
+                                <!-- Grid/Numbers SVG -->
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS Grid</span>
+                                <span class="project-tag">Math Eval</span>
+                            </div>
+                            <h3 class="project-card-title">Modern Calculator</h3>
+                            <p class="project-desc">A neo-morphic styled basic calculator app validating numerical chains, solving mathematical orders correctly.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/sahuyashi38/calculator" target="_blank" class="project-link-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    GitHub
+                                </a>
+                                <a href="#" class="project-link-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    
+                          
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            6. LEARNING JOURNEY SECTION
+        =========================================== -->
+        <section class="section" id="journey">
+            <div class="container">
+                <h2 class="section-title reveal">Learning <span>Journey</span></h2>
+                <div class="journey-wrapper reveal">
+                    <div class="journey-path">
+                        
+                        <!-- Step 1 -->
+                        <div class="glass-card journey-step">
+                            <span class="journey-status status-completed">✓</span>
+                            <!-- HTML Tag SVG -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6L2 12l6 6"/></svg>
+                            <h4>HTML5</h4>
+                            <p>Completed foundational markup schemas</p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="glass-card journey-step">
+                            <span class="journey-status status-completed">✓</span>
+                            <!-- Palette SVG -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.7255 3.09032 17.1962 4.85857 19C5.34484 19.4863 5.75382 20.0833 6.0463 20.7388L6.11181 20.8856C6.54133 21.8483 7.63588 22 8.61817 22H12Z"/><circle cx="7.5" cy="10.5" r="1.5" fill="currentColor"/><circle cx="11.5" cy="7.5" r="1.5" fill="currentColor"/><circle cx="16.5" cy="9.5" r="1.5" fill="currentColor"/></svg>
+                            <h4>CSS3</h4>
+                            <p>Layout grids, custom variables, styles</p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="glass-card journey-step">
+                            <span class="journey-status status-completed">✓</span>
+                            <!-- Terminal SVG -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                            <h4>JavaScript</h4>
+                            <p>Dynamic DOM nodes, async events, JSON APIs</p>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="glass-card journey-step">
+                            <span class="journey-status status-learning">→</span>
+                            <!-- Gears SVG -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                            <h4>React & Backend</h4>
+                            <p>Learning component states & Java APIs</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            7. CERTIFICATIONS SECTION
+        =========================================== -->
+        <section class="section" id="certifications">
+            <div class="container">
+                <h2 class="section-title reveal">My <span>Certifications</span></h2>
+                <div class="certifications-grid">
+                    
+                    <!-- Cert 1 -->
+                    <div class="glass-card cert-card reveal">
+                        <div class="cert-badge-wrapper">
+                            <!-- Certificate SVG -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3 class="cert-title">AI Chatbot Development</h3>
+                        <span class="cert-issuer">Digi Coder</span>
+                        <p class="cert-desc">Passionate about AI Chatbot Development with skills in HTML, CSS, JavaScript, Prompt Engineering, REST APIs, Git & GitHub. Currently expanding my expertise by learning React.js, Java, and Spring Boot to build intelligent, scalable, and user-friendly web applications.</p>
+
+                        <a href="#" class="cert-link">
+                            View Credentials
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="glass-card cert-card reveal">
+                        <div class="cert-badge-wrapper">
+                            <!-- Java/Script SVG -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        </div>
+                        <h3 class="cert-title">Programming Foundation in Java</h3>
+                        <span class="cert-issuer">Oracle Academy / NPTEL</span>
+                        <p class="cert-desc">Learned concepts including encapsulation, inheritance, polymorphism, arrays, standard library structures, and OOP logic loops.</p>
+                        <a href="#" class="cert-link">
+                            View Credentials
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="glass-card cert-card reveal">
+                        <div class="cert-badge-wrapper">
+                            <!-- Git SVG -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><line x1="6" y1="9" x2="6" y2="21"/><path d="M6 9a9 9 0 0 1 9 9"/></svg>
+                        </div>
+                        <h3 class="cert-title">Version Control with Git & GitHub</h3>
+                        <span class="cert-issuer">Atlassian / Coursera</span>
+                        <p class="cert-desc">Acquired standard methods for remote branching, merges, pull requests, cherry-picks, and solving code merge conflicts.</p>
+                        <a href="#" class="cert-link">
+                            View Credentials
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            8. GITHUB STATISTICS SECTION
+        =========================================== -->
+        <section class="section" id="github-stats">
+            <div class="container">
+                <h2 class="section-title reveal">GitHub <span>Statistics</span></h2>
+                <div class="github-wrapper reveal">
+                    <!-- Custom Git Stats Grid -->
+                    <div class="github-stats-grid">
+                        <div class="glass-card github-stat-card">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            <h4>200+</h4>
+                            <p>Contributions</p>
+                        </div>
+                        <div class="glass-card github-stat-card">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                            <h4>15+</h4>
+                            <p>Public Repositories</p>
+                        </div>
+                        <div class="glass-card github-stat-card">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+                            <h4>50+</h4>
+                            <p>Git Commits</p>
+                        </div>
+                    </div>
+
+                    <!-- Readme stats and Languages visuals (Embedded SVG fallback cards) -->
+                    <div class="github-visuals">
+                        <div class="github-card-iframe">
+                            <!-- Live integration of Github Readme Stats API with custom theme colors -->
+                            <img src="https://github-readme-stats.vercel.app/api?username=sahuyashi38&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f1626&title_color=8b5cf6&text_color=94a3b8&icon_color=3b82f6" alt="Yashi Sahu's Github Stats" onError="this.style.display='none'; document.getElementById('github-stats-fallback').style.display='block';">
+                            <!-- Offline Fallback content if the Vercel API doesn't load/respond -->
+                            <div id="github-stats-fallback" style="display:none;" class="github-placeholder-info">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                <p>Live Github connection loaded successfully! Profile username linked: @sahuyashi38</p>
+                            </div>
+                        </div>
+
+                        <div class="github-card-iframe">
+                            <!-- Top languages stats -->
+                            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sahuyashi38&layout=compact&theme=tokyonight&hide_border=true&bg_color=0f1626&title_color=8b5cf6&text_color=94a3b8" alt="Yashi Sahu's Top Languages" onError="this.style.display='none'; document.getElementById('github-langs-fallback').style.display='block';">
+                            <!-- Language fallback -->
+                            <div id="github-langs-fallback" style="display:none;" class="github-placeholder-info">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                <p>Top Languages: HTML, CSS, JavaScript, Java</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            9. CONTACT SECTION
+        =========================================== -->
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section-title reveal">Contact <span>Me</span></h2>
+                <div class="contact-grid">
+                    
+                    <!-- Contact Information column -->
+                    <div class="contact-info reveal">
+                        
+                        <!-- Email Card -->
+                        <div class="glass-card contact-card">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email Me</h4>
+                                <p><a href="mailto:sahuyashi38@gmail.com">sahuyashi38@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Phone Card -->
+                        <div class="glass-card contact-card">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Call/WhatsApp</h4>
+                                <p><a href="tel:+918924826576">+91 8924826576</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Location Card -->
+                        <div class="glass-card contact-card">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Current Location</h4>
+                                <p>Ajhua Kaushambhi, Uttar Pradesh, India</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Contact Form column -->
+                    <div class="glass-card contact-form-wrapper reveal">
+                        <form id="contact-form" action="#" method="POST" novalidate>
+                            <div class="form-group">
+                                <label for="contact-name" class="form-label">Full Name</label>
+                                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Yashi Sahu" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email" class="form-label">Email Address</label>
+                                <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. sahuyashi38@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message" class="form-label">Message</label>
+                                <textarea id="contact-message" name="message" class="form-input" placeholder="Write your internship offer details or project details here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width:100%;">
+                                <!-- Send icon -->
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================
+        10. FOOTER SECTION
+    =========================================== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#hero" class="footer-logo">
+                <span>&lt;</span>YS<span>/&gt;</span>
+            </a>
+            <div class="footer-socials">
+                <a href="https://github.com/sahuyashi38" target="_blank" class="social-link" aria-label="GitHub Profile">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/yashi-sahu-62523a37b/" target="_blank" class="social-link" aria-label="LinkedIn Profile">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+            </div>
+            <p class="footer-text">
+                &copy; 2026. Designed and Developed with <span>&hearts;</span> by <strong>Yashi Sahu</strong>
+            </p>
+        </div>
+    </footer>
+
+    <!-- --- Toast Notification Container --- -->
+    <div id="toast" class="toast" role="alert" aria-live="assertive"></div>
+
+    <!-- --- Floating Back-To-Top Button --- -->
+    <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+        <!-- Up Arrow SVG -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <!-- External JavaScript script -->
+    <script src="./script.js"></script>
+</body>
+</html>
